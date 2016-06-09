@@ -1,0 +1,17 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "alm.waarp.fr/go/go-utils/waarp",
+			"repository": "https://alm.waarp.fr/go-utils/waarp.git",
+			"revision": "20416083175c1477975acd2d46607464f8fb445f",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/jessevdk/go-flags",
+			"repository": "https://github.com/jessevdk/go-flags",
+			"revision": "b9b882a3990882b05e02765f5df2cd3ad02874ee",
+			"branch": "master"
+		}
+	]
+}
