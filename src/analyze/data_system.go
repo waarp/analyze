@@ -80,20 +80,36 @@ func setDistribution(sd *SystemData) {
 		return
 	}
 
+	var (
+		rxPretty  = regexp.MustCompile(`PRETTY_NAME="([^"]*?)"`)
+		rxName    = regexp.MustCompile(`NAME="([^"]*?)"`)
+		rxVersion = regexp.MustCompile(`VERSION="([^"]*?)"`)
+	)
+
 	switch {
-	case strings.Contains(out, `NAME="Arch`):
-		sd.Distribution = "Arch Linux"
-
-	case strings.Contains(out, `Red Hat`):
-		sd.Distribution = out
-
-	case strings.Contains(out, `DISTRIB_ID=Ubuntu`):
-		sd.Distribution = "Ubuntu (unknown version)"
-		rxDistrib := regexp.MustCompile(`DISTRIB_DESCRIPTION="([^"]+)"`)
-		res := rxDistrib.FindStringSubmatch(out)
+	case strings.Contains(out, `PRETTY_NAME=`):
+		res := rxPretty.FindStringSubmatch(out)
 		if len(res) > 1 {
 			sd.Distribution = res[1]
 		}
+
+	case strings.Contains(out, `NAME=`) && strings.Contains(out, `VERSION=`):
+		res := rxName.FindStringSubmatch(out)
+		if len(res) > 1 {
+			sd.Distribution = res[1]
+		}
+
+		res = rxVersion.FindStringSubmatch(out)
+		if len(res) > 1 {
+			sd.Distribution += " " + res[1]
+		}
+
+	case strings.Contains(out, `NAME=`):
+		res := rxName.FindStringSubmatch(out)
+		if len(res) > 1 {
+			sd.Distribution = res[1]
+		}
+
 	default:
 		sd.Distribution = out
 	}
