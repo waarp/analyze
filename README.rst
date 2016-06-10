@@ -31,6 +31,11 @@ You can then run Waarp Analyze with the command::
 
   /path/to/waarp-analyze-{version}/waarp-analyze
 
+Alternatively, you can build it from source with gb_: clone this
+repository, then run ``gb build`` at the root of the project.
+
+.. _gb: https://getgb.io
+
 
 Execution
 ---------
@@ -89,3 +94,9 @@ Waarp Analyze includes following data in reports:
   - The jars used, and their version
   - Its open sockets
   - Its logs (the last open file if log rotation is enabled)
+
+
+License
+-------
+
+Waarp Analyze is provided under the terms of the MIT license.
