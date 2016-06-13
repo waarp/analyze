@@ -1,0 +1,1665 @@
+
+Waarp Analyze Report
+####################
+
+Generation date:
+  2016-06-13 10:52:00.307506173 +0000 UTC
+Generation command:
+  /vagrant/waarp-analyze -o /vagrant/report.txt
+
+
+
+System Data
+===========
+
+System:
+  GNU/Linux
+Distribution:
+  >>> Error: Cannot read file '/etc/os-release' (open /etc/os-release: no such file or directory)
+Kernel:
+  Linux 2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+Arch:
+  x86_64
+CPUs:
+  1
+RAM:
+  1922428
+System Load:
+  0.12 0.43 0.26 2/514 8886
+
+
+CPU Infos
+---------
+
+::
+
+  Architecture:          x86_64
+  CPU op-mode(s):        32-bit, 64-bit
+  Byte Order:            Little Endian
+  CPU(s):                1
+  On-line CPU(s) list:   0
+  Thread(s) per core:    1
+  Core(s) per socket:    1
+  Socket(s):             1
+  NUMA node(s):          1
+  Vendor ID:             GenuineIntel
+  CPU family:            6
+  Model:                 23
+  Stepping:              10
+  CPU MHz:               2526.909
+  BogoMIPS:              5053.81
+  L1d cache:             32K
+  L1i cache:             32K
+  L2 cache:              6144K
+  NUMA node0 CPU(s):     0
+
+
+RAM Infos
+---------
+
+::
+
+  MemTotal:        1922428 kB
+  MemFree:          610284 kB
+  Buffers:           21776 kB
+  Cached:           479544 kB
+  SwapCached:            0 kB
+  Active:           898080 kB
+  Inactive:         297688 kB
+  Active(anon):     697048 kB
+  Inactive(anon):    13048 kB
+  Active(file):     201032 kB
+  Inactive(file):   284640 kB
+  Unevictable:           0 kB
+  Mlocked:               0 kB
+  SwapTotal:       1015804 kB
+  SwapFree:        1015804 kB
+  Dirty:                80 kB
+  Writeback:             0 kB
+  AnonPages:        694436 kB
+  Mapped:            50204 kB
+  Shmem:             15652 kB
+  Slab:              79400 kB
+  SReclaimable:      51952 kB
+  SUnreclaim:        27448 kB
+  KernelStack:        4088 kB
+  PageTables:         7652 kB
+  NFS_Unstable:          0 kB
+  Bounce:                0 kB
+  WritebackTmp:          0 kB
+  CommitLimit:     1977016 kB
+  Committed_AS:    1872208 kB
+  VmallocTotal:   34359738367 kB
+  VmallocUsed:       31968 kB
+  VmallocChunk:   34359695864 kB
+  HardwareCorrupted:     0 kB
+  AnonHugePages:    436224 kB
+  HugePages_Total:       0
+  HugePages_Free:        0
+  HugePages_Rsvd:        0
+  HugePages_Surp:        0
+  Hugepagesize:       2048 kB
+  DirectMap4k:       12224 kB
+  DirectMap2M:     2084864 kB
+
+
+Disks
+-----
+
+::
+
+  Filesystem            Size  Used Avail Use% Mounted on
+  /dev/mapper/VolGroup-lv_root
+                         19G  1.3G   16G   8% /
+  tmpfs                 939M  4.0K  939M   1% /dev/shm
+  /dev/sda1             477M   33M  419M   8% /boot
+  vagrant               215G  196G   19G  92% /vagrant
+
+
+Running processes
+-----------------
+
+::
+
+  USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+  root         2  0.0  0.0      0     0 ?        S    10:42   0:00 [kthreadd]
+  root         3  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [migration/0]
+  root         4  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [ksoftirqd/0]
+  root         5  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [stopper/0]
+  root         6  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [watchdog/0]
+  root         7  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [events/0]
+  root         8  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [cgroup]
+  root         9  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [khelper]
+  root        10  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [netns]
+  root        11  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [async/mgr]
+  root        12  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [pm]
+  root        13  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [sync_supers]
+  root        14  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [bdi-default]
+  root        15  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kintegrityd/0]
+  root        16  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kblockd/0]
+  root        17  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kacpid]
+  root        18  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kacpi_notify]
+  root        19  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kacpi_hotplug]
+  root        20  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [ata_aux]
+  root        21  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [ata_sff/0]
+  root        22  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [ksuspend_usbd]
+  root        23  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [khubd]
+  root        24  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kseriod]
+  root        25  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [md/0]
+  root        26  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [md_misc/0]
+  root        27  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [linkwatch]
+  root        28  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [khungtaskd]
+  root        29  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kswapd0]
+  root        30  0.0  0.0      0     0 ?        SN   10:42   0:00  \_ [ksmd]
+  root        31  0.0  0.0      0     0 ?        SN   10:42   0:00  \_ [khugepaged]
+  root        32  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [aio/0]
+  root        33  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [crypto/0]
+  root        41  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kthrotld/0]
+  root        43  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kpsmoused]
+  root        44  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [usbhid_resumer]
+  root        45  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [deferwq]
+  root        77  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kdmremove]
+  root        78  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kstriped]
+  root       151  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [scsi_eh_0]
+  root       152  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [scsi_eh_1]
+  root       237  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kdmflush]
+  root       239  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kdmflush]
+  root       256  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [jbd2/dm-0-8]
+  root       257  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [ext4-dio-unwrit]
+  root       372  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [iprt/0]
+  root       586  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [jbd2/sda1-8]
+  root       587  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [ext4-dio-unwrit]
+  root       624  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [flush-253:0]
+  root       629  0.0  0.0      0     0 ?        S    10:42   0:00  \_ [kauditd]
+  root         1  0.1  0.0  19356  1528 ?        Ss   10:42   0:01 /sbin/init
+  root       342  0.0  0.0  10908   972 ?        S<s  10:42   0:00 /sbin/udevd -d
+  root       555  0.0  0.0  10908   988 ?        S<   10:42   0:00  \_ /sbin/udevd -d
+  root       825  0.0  0.0   9120   676 ?        Ss   10:42   0:00 /sbin/dhclient -1 -q -cf /etc/dhcp/dhclient-eth0.conf -lf /var/lib/dhclient/dhclient-eth0.leases -pf /var/run/dhclient-eth0.pid eth0
+  root       876  0.0  0.0  27596   796 ?        S<sl 10:42   0:00 auditd
+  root       896  0.0  0.0 249088  1576 ?        Sl   10:42   0:00 /sbin/rsyslogd -i /var/run/syslogd.pid -c 5
+  rpc        941  0.0  0.0  18976   888 ?        Ss   10:42   0:00 rpcbind
+  rpcuser    961  0.0  0.0  23348  1328 ?        Ss   10:42   0:00 rpc.statd
+  dbus      5347  0.0  0.0  21432   940 ?        Ss   10:43   0:00 dbus-daemon --system
+  root      5379  0.0  0.0   4080   632 ?        Ss   10:43   0:00 /usr/sbin/acpid
+  68        5389  0.0  0.1  37812  3732 ?        Ssl  10:43   0:00 hald
+  root      5390  0.0  0.0  20396  1312 ?        S    10:43   0:00  \_ hald-runner
+  root      5422  0.0  0.0  22516  1264 ?        S    10:43   0:00      \_ hald-addon-input: Listening on /dev/input/event3 /dev/input/event6 /dev/input/event5 /dev/input/event1 /dev/input/event0
+  68        5431  0.0  0.0  18004  1120 ?        S    10:43   0:00      \_ hald-addon-acpi: listening on acpid socket /var/run/acpid.socket
+  root      5494  0.1  0.0 335952  1348 ?        Sl   10:43   0:00 /usr/sbin/VBoxService
+  root      5504  0.0  0.1 577696  3500 ?        Sl   10:43   0:00 /usr/sbin/console-kit-daemon --no-daemon
+  root      5582  0.0  0.0  66688  1368 ?        Ss   10:43   0:00 /usr/sbin/sshd
+  root      8642  0.0  0.2  98368  4264 ?        Ss   10:50   0:00  \_ sshd: vagrant [priv]
+  vagrant   8645  0.0  0.1  98368  2264 ?        S    10:50   0:00      \_ sshd: vagrant@pts/0
+  vagrant   8646  0.0  0.0 108304  1908 pts/0    Ss   10:50   0:00          \_ -bash
+  root      8875  4.0  0.1 189704  3340 pts/0    S+   10:51   0:00              \_ sudo /vagrant/waarp-analyze -o /vagrant/report.txt
+  root      8877  8.0  0.1   5336  2276 pts/0    Sl+  10:51   0:00                  \_ /vagrant/waarp-analyze -o /vagrant/report.txt
+  root      8888  0.0  0.0 110340  1144 pts/0    R+   10:51   0:00                      \_ ps auxf
+  root      5880  0.0  0.1  81328  3820 ?        Ss   10:43   0:00 /usr/libexec/postfix/master
+  postfix   5899  0.0  0.1  81408  3808 ?        S    10:43   0:00  \_ pickup -l -t fifo -u
+  postfix   5900  0.0  0.2  81592  3852 ?        S    10:43   0:00  \_ qmgr -l -t fifo -u
+  root      5944  0.0  0.0 114644  1080 ?        Ss   10:43   0:00 /usr/sbin/abrtd
+  root      5971  0.0  0.0 117332  1236 ?        Ss   10:43   0:00 crond
+  root      6001  0.0  0.0  21576   512 ?        Ss   10:43   0:00 /usr/sbin/atd
+  root      6034  0.0  0.0   4064   576 tty1     Ss+  10:43   0:00 /sbin/mingetty /dev/tty1
+  root      6036  0.0  0.0   4064   580 tty2     Ss+  10:43   0:00 /sbin/mingetty /dev/tty2
+  root      6039  0.0  0.0   4064   576 tty3     Ss+  10:43   0:00 /sbin/mingetty /dev/tty3
+  root      6042  0.0  0.0   4064   576 tty4     Ss+  10:43   0:00 /sbin/mingetty /dev/tty4
+  root      6045  0.0  0.0   4064   576 tty5     Ss+  10:43   0:00 /sbin/mingetty /dev/tty5
+  root      6049  0.0  0.0   4064   580 tty6     Ss+  10:43   0:00 /sbin/mingetty /dev/tty6
+  postgres  7561  0.0  0.8 325676 15584 ?        S    10:46   0:00 /usr/pgsql-9.5/bin/postmaster -D /var/lib/pgsql/9.5/data
+  postgres  7564  0.0  0.0 178560  1536 ?        Ss   10:46   0:00  \_ postgres: logger process
+  postgres  7566  0.0  0.1 325820  3344 ?        Ss   10:46   0:00  \_ postgres: checkpointer process
+  postgres  7567  0.0  0.1 325676  2756 ?        Ss   10:46   0:00  \_ postgres: writer process
+  postgres  7568  0.0  0.3 325676  5916 ?        Ss   10:46   0:00  \_ postgres: wal writer process
+  postgres  7569  0.0  0.1 326076  2684 ?        Ss   10:46   0:00  \_ postgres: autovacuum launcher process
+  postgres  7570  0.0  0.0 180792  1796 ?        Ss   10:46   0:00  \_ postgres: stats collector process
+  postgres  7867  0.0  0.3 327328  7116 ?        Ss   10:48   0:00  \_ postgres: waarp waarp-manager ::1(50533) idle
+  postgres  7871  0.0  0.3 327312  7204 ?        Ss   10:48   0:00  \_ postgres: waarp waarp-manager ::1(50535) idle
+  root      7855  0.0  0.0 108432  1168 ?        S    10:48   0:00 bash /etc/init.d/waarp-manager start
+  root      7858  0.0  0.0 131192  1628 ?        S    10:48   0:00  \_ runuser -s /bin/bash waarp -c ulimit -S -c 0 >/dev/null 2>&1 ; waarp-manager server -c /etc/waarp-manager/waarp-manager.ini
+  waarp     7861  0.0  0.0 106060  1304 ?        Ss   10:48   0:00      \_ bash -c ulimit -S -c 0 >/dev/null 2>&1 ; waarp-manager server -c /etc/waarp-manager/waarp-manager.ini
+  waarp     7862  0.1  0.7  21284 14528 ?        Sl   10:48   0:00          \_ waarp-manager server -c /etc/waarp-manager/waarp-manager.ini
+  waarp     8227  3.5  9.8 2670312 189848 ?      Sl   10:49   0:05 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin/java -server -Xms256m -Xmx512m -cp /usr/share/waarp/r66-lib/WaarpR66-3.0.6.jar:/usr/share/waarp/r66-lib/* -Dlogback.configurationFile=/etc/waarp/conf.d/server1/logback-server.xml org.waarp.openr66.server.R66Server /etc/waarp/conf.d/server1/server.xml
+  waarp     8298  3.8  9.8 2670312 188680 ?      Sl   10:49   0:06 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin/java -server -Xms256m -Xmx512m -cp /usr/share/waarp/r66-lib/WaarpR66-3.0.6.jar:/usr/share/waarp/r66-lib/* -Dlogback.configurationFile=/etc/waarp/conf.d/server2/logback-server.xml org.waarp.openr66.server.R66Server /etc/waarp/conf.d/server2/server.xml
+  waarp     8381  3.7  9.9 2671340 191620 ?      Sl   10:49   0:05 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin/java -server -Xms256m -Xmx512m -cp /usr/share/waarp/r66-lib/WaarpR66-3.0.6.jar:/usr/share/waarp/r66-lib/* -Dlogback.configurationFile=/etc/waarp/conf.d/gwftp/logback-server.xml org.waarp.openr66.server.R66Server /etc/waarp/conf.d/gwftp/server.xml
+  waarp     8467  2.4  8.0 2559256 155044 ?      Sl   10:49   0:03 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin/java -server -Xms256m -Xmx512m -cp /usr/share/waarp/gwftp-lib/WaarpGatewayFtp-3.0.4.jar:/usr/share/waarp/gwftp-lib/* -Dlogback.configurationFile=/etc/waarp/conf.d/gwftp/logback-gwftp.xml org.waarp.gateway.ftp.ExecGatewayFtpServer /etc/waarp/conf.d/gwftp/gwftp.xml /etc/waarp/conf.d/gwftp/client.xml
+
+
+Waarp Instances
+===============
+
+
+Instance server1
+----------------
+
+Type:
+  Waarp R66 Server
+Id:
+  server1 (server1-ssl)
+Command line:
+  /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin/java -server -Xms256m -Xmx512m -cp /usr/share/waarp/r66-lib/WaarpR66-3.0.6.jar:/usr/share/waarp/r66-lib/* -Dlogback.configurationFile=/etc/waarp/conf.d/server1/logback-server.xml org.waarp.openr66.server.R66Server /etc/waarp/conf.d/server1/server.xml
+Working directory:
+  /
+Pid:
+  8227
+User:
+  waarp (497)
+Group:
+  waarp (498)
+Jvm:
+  /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin/java
+  openjdk version "1.8.0_91"
+  OpenJDK Runtime Environment (build 1.8.0_91-b14)
+  OpenJDK 64-Bit Server VM (build 25.91-b14, mixed mode)
+RSS:
+  189848 (9.8%)
+CPU:
+  3.5 %
+VSZ:
+  2670312
+Thread count:
+  106
+File descriptor count:
+  1564
+
+
+Jars used
+~~~~~~~~~
+
+::
+
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/ext/sunjce_provider.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/resources.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/jsse.jar
+   /usr/share/waarp/r66-lib/jaxen-1.1.6.jar
+   /usr/share/waarp/r66-lib/logback-core-1.1.3.jar
+   /usr/share/waarp/r66-lib/snmp4j-2.4.2.jar
+   /usr/share/waarp/r66-lib/WaarpDigest-3.0.1.jar
+   /usr/share/waarp/r66-lib/snmp4j-agent-2.4.1.jar
+   /usr/share/waarp/r66-lib/logback-classic-1.1.3.jar
+   /usr/share/waarp/r66-lib/mariadb-java-client-1.3.4.jar
+   /usr/share/waarp/r66-lib/libthrift-0.9.3.jar
+   /usr/share/waarp/r66-lib/mysql-connector-java-5.1.36.jar
+   /usr/share/waarp/r66-lib/WaarpThrift-3.0.2.jar
+   /usr/share/waarp/r66-lib/ojdbc6-6.jar
+   /usr/share/waarp/r66-lib/netty-all-4.1.0.CR3.jar
+   /usr/share/waarp/r66-lib/commons-exec-1.3.jar
+   /usr/share/waarp/r66-lib/javassist-3.20.0-GA.jar
+   /usr/share/waarp/r66-lib/WaarpSnmp-3.0.2.jar
+   /usr/share/waarp/r66-lib/httpcore-4.4.1.jar
+   /usr/share/waarp/r66-lib/WaarpPassword-3.0.2.jar
+   /usr/share/waarp/r66-lib/XML-APIS-2.5.0.jar
+   /usr/share/waarp/r66-lib/jackson-databind-2.7.1-1.jar
+   /usr/share/waarp/r66-lib/commons-io-2.4.jar
+   /usr/share/waarp/r66-lib/commons-net-3.4-ftp.jar
+   /usr/share/waarp/r66-lib/WaarpCommon-3.0.6.jar
+   /usr/share/waarp/r66-lib/WaarpExec-3.0.1.jar
+   /usr/share/waarp/r66-lib/WaarpGatewayKernel-3.0.5.jar
+   /usr/share/waarp/r66-lib/WaarpR66Gui-3.0.1.jar
+   /usr/share/waarp/r66-lib/javasysmon-0.3.6.jar
+   /usr/share/waarp/r66-lib/commons-logging-1.2.jar
+   /usr/share/waarp/r66-lib/commons-compress-1.10.jar
+   /usr/share/waarp/r66-lib/jackson-core-2.7.1.jar
+   /usr/share/waarp/r66-lib/WaarpProxyR66-3.0.3.jar
+   /usr/share/waarp/r66-lib/commons-codec-1.10.jar
+   /usr/share/waarp/r66-lib/jackson-annotations-2.7.1.jar
+   /usr/share/waarp/r66-lib/ftp4j-1.7.2.jar
+   /usr/share/waarp/r66-lib/WaarpAdministrator-3.0.1.jar
+   /usr/share/waarp/r66-lib/commons-daemon-1.0.15.jar
+   /usr/share/waarp/r66-lib/xml-apis-1.0.b2.jar
+   /usr/share/waarp/r66-lib/httpclient-4.4.1.jar
+   /usr/share/waarp/r66-lib/slf4j-api-1.7.13.jar
+   /usr/share/waarp/r66-lib/h2-1.3.176.jar
+   /usr/share/waarp/r66-lib/joda-time-2.9.1.jar
+   /usr/share/waarp/r66-lib/WaarpFtp-Core-3.0.3.jar
+   /usr/share/waarp/r66-lib/WaarpXmlEditor-1.0.1.jar
+   /usr/share/waarp/r66-lib/XMLEditor-2.2.jar
+   /usr/share/waarp/r66-lib/log4j-1.2.14.jar
+   /usr/share/waarp/r66-lib/Xerces-2.5.0.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/rt.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/ext/sunec.jar
+   /usr/share/waarp/r66-lib/postgresql-9.4-1206-jdbc4.jar
+   /usr/share/waarp/r66-lib/dom4j-1.6.1.jar
+   /usr/share/waarp/r66-lib/WaarpR66-3.0.6.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/jce.jar
+   /usr/share/waarp/r66-lib/WaarpFtpClient-3.0.1.jar
+
+
+Configuration
+~~~~~~~~~~~~~
+
+::
+
+  <config>
+    <identity>
+      <hostid>server1</hostid>
+      <sslhostid>server1-ssl</sslhostid>
+      <cryptokey>/etc/waarp/certs/cryptokey.des</cryptokey>
+      <authentfile></authentfile>
+    </identity>
+    <server>
+      <serveradmin>admin</serveradmin>
+      <serverpasswd>5a4b7c6a66065cbb622acefec8c3a302</serverpasswd>
+      <usenossl>true</usenossl>
+      <usessl>true</usessl>
+      <httpadmin>/usr/share/waarp/r66-admin</httpadmin>
+      <admkeypath>/etc/waarp/certs/adminkey.jks</admkeypath>
+      <admkeystorepass>password</admkeystorepass>
+      <admkeypass>password</admkeypass>
+      <checkaddress>False</checkaddress>
+      <checkclientaddress>False</checkclientaddress>
+      <multiplemonitors>1</multiplemonitors>
+    </server>
+    <network>
+      <serverport>6666</serverport>
+      <serversslport>6667</serversslport>
+      <serverhttpport>8067</serverhttpport>
+      <serverhttpsport>8066</serverhttpsport>
+    </network>
+    <ssl>
+      <keypath>/etc/waarp/certs/key.jks</keypath>
+      <keystorepass>password</keystorepass>
+      <keypass>password</keypass>
+      <trustkeypath>/etc/waarp/certs/trustkey.jks</trustkeypath>
+      <trustkeystorepass>password</trustkeystorepass>
+      <trustuseclientauthenticate>True</trustuseclientauthenticate>
+    </ssl>
+    <directory>
+      <serverhome>/var/lib/waarp/server1</serverhome>
+      <in>in</in>
+      <out>out</out>
+      <arch>arch</arch>
+      <work>work</work>
+      <conf>conf</conf>
+    </directory>
+    <rest>
+      <restaddress>127.0.0.1</restaddress>
+      <restport>8088</restport>
+      <restssl>true</restssl>
+      <restauthenticated>true</restauthenticated>
+      <resttimelimit>3000</resttimelimit>
+      <restsignature>true</restsignature>
+      <restsigkey>/etc/waarp/certs/restsigning.key</restsigkey>
+      <restmethod>
+        <restname>ALL</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+      <restmethod>
+        <restname>Bandwidth</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+      <restmethod>
+        <restname>Information</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+      <restmethod>
+        <restname>Server</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+      <restmethod>
+        <restname>Control</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+    </rest>
+    <limit>
+      <serverthread>8</serverthread>
+      <clientthread>80</clientthread>
+      <memorylimit>4000000000</memorylimit>
+      <runlimit>10000</runlimit>
+      <delaycommand>5000</delaycommand>
+      <delayretry>10000</delayretry>
+      <timeoutcon>10000</timeoutcon>
+    </limit>
+    <db>
+      <dbdriver>h2</dbdriver>
+      <dbserver>jdbc:h2:/var/lib/waarp/server1/db/waarp;MODE=ORACLE;AUTO_SERVER=TRUE</dbserver>
+      <dbuser>waarp</dbuser>
+      <dbpasswd>waarp</dbpasswd>
+    </db>
+      <business>
+          <businessid>fw-client</businessid>
+      </business>
+  </config>
+
+
+Opened Sockets
+~~~~~~~~~~~~~~
+
+::
+
+  UDP *:34776
+  23629 socket
+  TCP *:57602 (LISTEN)
+  TCP *:6666 (LISTEN)
+  TCP *:6667 (LISTEN)
+  TCP *:8067 (LISTEN)
+  TCP *:8066 (LISTEN)
+  TCP 127.0.0.1:8088 (LISTEN)
+  TCP 127.0.0.1:8088->127.0.0.1:41606 (ESTABLISHED)
+  30739 socket
+
+
+Status
+~~~~~~
+
+::
+
+  Name: java
+  State:    S (sleeping)
+  Tgid: 8227
+  Pid:  8227
+  PPid: 1
+  TracerPid:    0
+  Uid:  497 497 497 497
+  Gid:  498 498 498 498
+  Utrace:   0
+  FDSize:   2048
+  Groups:   498
+  VmPeak:    2670312 kB
+  VmSize:    2670312 kB
+  VmLck:           0 kB
+  VmHWM:      190180 kB
+  VmRSS:      189848 kB
+  VmData:    2499176 kB
+  VmStk:          88 kB
+  VmExe:           4 kB
+  VmLib:       18536 kB
+  VmPTE:         792 kB
+  VmSwap:          0 kB
+  Threads:  106
+  SigQ: 0/14844
+  SigPnd:   0000000000000000
+  ShdPnd:   0000000000000000
+  SigBlk:   0000000000000000
+  SigIgn:   0000000000001002
+  SigCgt:   2000000181004ccd
+  CapInh:   0000000000000000
+  CapPrm:   0000000000000000
+  CapEff:   0000000000000000
+  CapBnd:   ffffffffffffffff
+  Cpus_allowed: 1
+  Cpus_allowed_list:    0
+  Mems_allowed: 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+  Mems_allowed_list:    0
+  voluntary_ctxt_switches:  1
+  nonvoluntary_ctxt_switches:   9
+
+
+Environment
+~~~~~~~~~~~
+
+::
+
+  TERM=vt100
+  SHELL=/bin/bash
+  USER=waarp
+  PATH=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin:/sbin:/usr/sbin:/bin:/usr/bin
+  WAARP_SERVICE=1
+  PWD=/
+  LANG=en_US.UTF-8
+  SHLVL=3
+  HOME=/var/lib/waarp
+  LOGNAME=waarp
+  _=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin/java
+
+
+
+System Limits
+~~~~~~~~~~~~~
+
+::
+
+  Limit                     Soft Limit           Hard Limit           Units
+  Max cpu time              unlimited            unlimited            seconds
+  Max file size             unlimited            unlimited            bytes
+  Max data size             unlimited            unlimited            bytes
+  Max stack size            10485760             unlimited            bytes
+  Max core file size        0                    unlimited            bytes
+  Max resident set          unlimited            unlimited            bytes
+  Max processes             1024                 14844                processes
+  Max open files            4096                 4096                 files
+  Max locked memory         65536                65536                bytes
+  Max address space         unlimited            unlimited            bytes
+  Max file locks            unlimited            unlimited            locks
+  Max pending signals       14844                14844                signals
+  Max msgqueue size         819200               819200               bytes
+  Max nice priority         0                    0
+  Max realtime priority     0                    0
+  Max realtime timeout      unlimited            unlimited            us
+
+
+Logs
+~~~~
+
+From: /var/log/waarp/server1.log
+
+::
+
+  13/06/2016/10:48:23.223 ERROR [org.waarp.common.database.DbRequest] [main] org.waarp.common.database.DbRequest.select(DbRequest.java:124) : SQL Exception Request:SELECT * FROM  CONFIGURATION  Table "CONFIGURATION" not found; SQL statement:
+  SELECT * FROM  CONFIGURATION  [42102-176]
+  13/06/2016/10:48:23.225 ERROR [org.waarp.common.database.DbSession] [main] org.waarp.common.database.DbSession.error(DbSession.java:251) : SQLException: Table "CONFIGURATION" not found; SQL statement:
+  SELECT * FROM  CONFIGURATION  [42102-176] SQLState: 42S02VendorError: 42102
+  13/06/2016/10:48:23.229 WARN [org.waarp.openr66.configuration.FileBasedConfiguration] [main] org.waarp.openr66.configuration.FileBasedConfiguration.loadDatabase(FileBasedConfiguration.java:1858) : Database is not yet initiated: run ServerInitDatabase -initdb first
+  org.waarp.common.database.exception.WaarpDatabaseSqlException: SQL Exception Request:SELECT * FROM  CONFIGURATION
+    at org.waarp.common.database.DbRequest.select(DbRequest.java:128) ~[WaarpCommon-3.0.6.jar:na]
+    at org.waarp.openr66.configuration.FileBasedConfiguration.loadDatabase(FileBasedConfiguration.java:1856) [WaarpR66-3.0.6.jar:na]
+    at org.waarp.openr66.configuration.FileBasedConfiguration.setConfigurationInitDatabase(FileBasedConfiguration.java:2130) [WaarpR66-3.0.6.jar:na]
+    at org.waarp.openr66.server.ServerInitDatabase.main(ServerInitDatabase.java:119) [WaarpR66-3.0.6.jar:na]
+  Caused by: org.h2.jdbc.JdbcSQLException: Table "CONFIGURATION" not found; SQL statement:
+  SELECT * FROM  CONFIGURATION  [42102-176]
+    at org.h2.message.DbException.getJdbcSQLException(DbException.java:344) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.message.DbException.get(DbException.java:178) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.message.DbException.get(DbException.java:154) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.readTableOrView(Parser.java:5213) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.readTableFilter(Parser.java:1220) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1859) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelectSimple(Parser.java:1968) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelectSub(Parser.java:1853) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelectUnion(Parser.java:1674) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelect(Parser.java:1662) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parsePrepared(Parser.java:434) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parse(Parser.java:306) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parse(Parser.java:278) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.prepareCommand(Parser.java:243) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.engine.Session.prepareLocal(Session.java:442) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.engine.Session.prepareCommand(Session.java:384) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:172) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:160) ~[h2-1.3.176.jar:1.3.176]
+    at org.waarp.common.database.DbRequest.select(DbRequest.java:120) ~[WaarpCommon-3.0.6.jar:na]
+    ... 3 common frames omitted
+  13/06/2016/10:49:19.666 WARN [org.waarp.openr66.configuration.FileBasedConfiguration] [main] org.waarp.openr66.configuration.FileBasedConfiguration.loadServerParam(FileBasedConfiguration.java:1038) : Multiple Monitor configuration unactive
+  13/06/2016/10:49:20.536 WARN [io.netty.util.internal.ThreadLocalRandom] [main] Failed to generate a seed from SecureRandom within 3 seconds. Not enough entropy?
+  13/06/2016/10:49:20.738 WARN [org.waarp.openr66.protocol.configuration.Configuration] [main] org.waarp.openr66.protocol.configuration.Configuration.pipelineInit(Configuration.java:662) : Server Thread: 8 Client Thread: 80 Runner Thread: 10000
+  13/06/2016/10:49:21.116 WARN [org.waarp.openr66.server.R66Server] [main] org.waarp.openr66.server.R66Server.main(R66Server.java:55) : Server OpenR66 starts for server1 : Config: { ServerPort: 6666, ServerSslPort: 6667, ServerView: 8067, ServerAdmin: 8066, ThriftPort: 'NoThriftSupport', RestAddress: ['127.0.0.1:8088'], TimeOut: 10000, BaseDir: '/var/lib/waarp/server1', DigestAlgo: 'MD5', checkRemote: false, checkClient: false, snmpActive: false, chrootChecked: true, blacklist: true, isHostProxified: false}
+  13/06/2016/10:50:37.396 WARN [org.waarp.gateway.kernel.rest.HttpRestHandler] [HttpWorker-1] org.waarp.gateway.kernel.rest.HttpRestHandler.exceptionCaught(HttpRestHandler.java:747) : Exception java.lang.RuntimeException: java.security.KeyException
+  io.netty.handler.codec.DecoderException: java.lang.RuntimeException: java.security.KeyException
+    at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:418) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:245) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:83) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:154) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:354) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:145) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:1078) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:125) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:510) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:467) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:381) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+  Caused by: java.lang.RuntimeException: java.security.KeyException
+    at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1429) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:535) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.readNetRecord(SSLEngineImpl.java:813) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:781) ~[na:1.8.0_91]
+    at javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:624) ~[na:1.8.0_91]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1080) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:958) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:895) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:387) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    ... 13 common frames omitted
+  Caused by: java.security.ProviderException: java.security.KeyException
+    at sun.security.ec.ECKeyPairGenerator.generateKeyPair(ECKeyPairGenerator.java:147) ~[sunec.jar:1.8.0_91]
+    at java.security.KeyPairGenerator$Delegate.generateKeyPair(KeyPairGenerator.java:703) ~[na:1.8.0_91]
+    at sun.security.ssl.ECDHCrypt.<init>(ECDHCrypt.java:64) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.setupEphemeralECDHKeys(ServerHandshaker.java:1432) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.trySetCipherSuite(ServerHandshaker.java:1219) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.chooseCipherSuite(ServerHandshaker.java:1023) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.clientHello(ServerHandshaker.java:738) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.processMessage(ServerHandshaker.java:221) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$1.run(Handshaker.java:919) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$1.run(Handshaker.java:916) ~[na:1.8.0_91]
+    at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1369) ~[na:1.8.0_91]
+    at io.netty.handler.ssl.SslHandler.runDelegatedTasks(SslHandler.java:1106) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:997) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    ... 15 common frames omitted
+  Caused by: java.security.KeyException: null
+    at sun.security.ec.ECKeyPairGenerator.generateECKeyPair(Native Method) ~[sunec.jar:1.8.0_91]
+    at sun.security.ec.ECKeyPairGenerator.generateKeyPair(ECKeyPairGenerator.java:128) ~[sunec.jar:1.8.0_91]
+    ... 29 common frames omitted
+  13/06/2016/10:50:37.437 WARN [io.netty.channel.DefaultChannelPipeline] [HttpWorker-1] An exception was thrown by a user handler's exceptionCaught() method:
+  java.lang.NullPointerException: null
+    at org.waarp.gateway.kernel.rest.HttpRestHandler.forceClosing(HttpRestHandler.java:602) ~[WaarpGatewayKernel-3.0.5.jar:na]
+    at org.waarp.gateway.kernel.rest.HttpRestHandler.exceptionCaught(HttpRestHandler.java:764) ~[WaarpGatewayKernel-3.0.5.jar:na]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeExceptionCaughtNow(ChannelHandlerInvokerUtil.java:64) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeExceptionCaught(DefaultChannelHandlerInvoker.java:111) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeExceptionCaughtNow(ChannelHandlerInvokerUtil.java:64) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeExceptionCaught(DefaultChannelHandlerInvoker.java:111) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireExceptionCaught(CombinedChannelDuplexHandler.java:421) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerAdapter.exceptionCaught(ChannelHandlerAdapter.java:78) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.CombinedChannelDuplexHandler$1.fireExceptionCaught(CombinedChannelDuplexHandler.java:144) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.CombinedChannelDuplexHandler.exceptionCaught(CombinedChannelDuplexHandler.java:223) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeExceptionCaughtNow(ChannelHandlerInvokerUtil.java:64) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeExceptionCaught(DefaultChannelHandlerInvoker.java:111) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.exceptionCaught(SslHandler.java:738) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeExceptionCaughtNow(ChannelHandlerInvokerUtil.java:64) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.notifyHandlerException(ChannelHandlerInvokerUtil.java:219) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:85) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:154) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:354) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:145) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:1078) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:125) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:510) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:467) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:381) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+  13/06/2016/10:50:37.439 WARN [io.netty.channel.DefaultChannelPipeline] [HttpWorker-1] .. and the cause of the exceptionCaught() was:
+  io.netty.handler.codec.DecoderException: java.lang.RuntimeException: java.security.KeyException
+    at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:418) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:245) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:83) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:154) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:354) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:145) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:1078) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:125) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:510) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:467) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:381) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+  Caused by: java.lang.RuntimeException: java.security.KeyException
+    at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1429) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:535) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.readNetRecord(SSLEngineImpl.java:813) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:781) ~[na:1.8.0_91]
+    at javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:624) ~[na:1.8.0_91]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1080) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:958) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:895) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:387) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    ... 13 common frames omitted
+  Caused by: java.security.ProviderException: java.security.KeyException
+    at sun.security.ec.ECKeyPairGenerator.generateKeyPair(ECKeyPairGenerator.java:147) ~[sunec.jar:1.8.0_91]
+    at java.security.KeyPairGenerator$Delegate.generateKeyPair(KeyPairGenerator.java:703) ~[na:1.8.0_91]
+    at sun.security.ssl.ECDHCrypt.<init>(ECDHCrypt.java:64) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.setupEphemeralECDHKeys(ServerHandshaker.java:1432) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.trySetCipherSuite(ServerHandshaker.java:1219) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.chooseCipherSuite(ServerHandshaker.java:1023) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.clientHello(ServerHandshaker.java:738) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.processMessage(ServerHandshaker.java:221) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$1.run(Handshaker.java:919) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$1.run(Handshaker.java:916) ~[na:1.8.0_91]
+    at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1369) ~[na:1.8.0_91]
+    at io.netty.handler.ssl.SslHandler.runDelegatedTasks(SslHandler.java:1106) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:997) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    ... 15 common frames omitted
+  Caused by: java.security.KeyException: null
+    at sun.security.ec.ECKeyPairGenerator.generateECKeyPair(Native Method) ~[sunec.jar:1.8.0_91]
+    at sun.security.ec.ECKeyPairGenerator.generateKeyPair(ECKeyPairGenerator.java:128) ~[sunec.jar:1.8.0_91]
+    ... 29 common frames omitted
+
+Instance server2
+----------------
+
+Type:
+  Waarp R66 Server
+Id:
+  server2 (server2-ssl)
+Command line:
+  /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin/java -server -Xms256m -Xmx512m -cp /usr/share/waarp/r66-lib/WaarpR66-3.0.6.jar:/usr/share/waarp/r66-lib/* -Dlogback.configurationFile=/etc/waarp/conf.d/server2/logback-server.xml org.waarp.openr66.server.R66Server /etc/waarp/conf.d/server2/server.xml
+Working directory:
+  /
+Pid:
+  8298
+User:
+  waarp (497)
+Group:
+  waarp (498)
+Jvm:
+  /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin/java
+  openjdk version "1.8.0_91"
+  OpenJDK Runtime Environment (build 1.8.0_91-b14)
+  OpenJDK 64-Bit Server VM (build 25.91-b14, mixed mode)
+RSS:
+  188680 (9.8%)
+CPU:
+  3.8 %
+VSZ:
+  2670312
+Thread count:
+  106
+File descriptor count:
+  1564
+
+
+Jars used
+~~~~~~~~~
+
+::
+
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/ext/sunjce_provider.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/jce.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/resources.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/jsse.jar
+   /usr/share/waarp/r66-lib/jaxen-1.1.6.jar
+   /usr/share/waarp/r66-lib/logback-core-1.1.3.jar
+   /usr/share/waarp/r66-lib/snmp4j-2.4.2.jar
+   /usr/share/waarp/r66-lib/WaarpDigest-3.0.1.jar
+   /usr/share/waarp/r66-lib/snmp4j-agent-2.4.1.jar
+   /usr/share/waarp/r66-lib/logback-classic-1.1.3.jar
+   /usr/share/waarp/r66-lib/mariadb-java-client-1.3.4.jar
+   /usr/share/waarp/r66-lib/libthrift-0.9.3.jar
+   /usr/share/waarp/r66-lib/mysql-connector-java-5.1.36.jar
+   /usr/share/waarp/r66-lib/WaarpThrift-3.0.2.jar
+   /usr/share/waarp/r66-lib/ojdbc6-6.jar
+   /usr/share/waarp/r66-lib/netty-all-4.1.0.CR3.jar
+   /usr/share/waarp/r66-lib/commons-exec-1.3.jar
+   /usr/share/waarp/r66-lib/javassist-3.20.0-GA.jar
+   /usr/share/waarp/r66-lib/WaarpSnmp-3.0.2.jar
+   /usr/share/waarp/r66-lib/httpcore-4.4.1.jar
+   /usr/share/waarp/r66-lib/WaarpPassword-3.0.2.jar
+   /usr/share/waarp/r66-lib/XML-APIS-2.5.0.jar
+   /usr/share/waarp/r66-lib/jackson-databind-2.7.1-1.jar
+   /usr/share/waarp/r66-lib/commons-io-2.4.jar
+   /usr/share/waarp/r66-lib/commons-net-3.4-ftp.jar
+   /usr/share/waarp/r66-lib/WaarpCommon-3.0.6.jar
+   /usr/share/waarp/r66-lib/WaarpExec-3.0.1.jar
+   /usr/share/waarp/r66-lib/WaarpGatewayKernel-3.0.5.jar
+   /usr/share/waarp/r66-lib/WaarpR66Gui-3.0.1.jar
+   /usr/share/waarp/r66-lib/javasysmon-0.3.6.jar
+   /usr/share/waarp/r66-lib/commons-logging-1.2.jar
+   /usr/share/waarp/r66-lib/commons-compress-1.10.jar
+   /usr/share/waarp/r66-lib/jackson-core-2.7.1.jar
+   /usr/share/waarp/r66-lib/WaarpProxyR66-3.0.3.jar
+   /usr/share/waarp/r66-lib/commons-codec-1.10.jar
+   /usr/share/waarp/r66-lib/jackson-annotations-2.7.1.jar
+   /usr/share/waarp/r66-lib/ftp4j-1.7.2.jar
+   /usr/share/waarp/r66-lib/WaarpAdministrator-3.0.1.jar
+   /usr/share/waarp/r66-lib/xml-apis-1.0.b2.jar
+   /usr/share/waarp/r66-lib/httpclient-4.4.1.jar
+   /usr/share/waarp/r66-lib/joda-time-2.9.1.jar
+   /usr/share/waarp/r66-lib/h2-1.3.176.jar
+   /usr/share/waarp/r66-lib/WaarpFtp-Core-3.0.3.jar
+   /usr/share/waarp/r66-lib/WaarpXmlEditor-1.0.1.jar
+   /usr/share/waarp/r66-lib/XMLEditor-2.2.jar
+   /usr/share/waarp/r66-lib/log4j-1.2.14.jar
+   /usr/share/waarp/r66-lib/Xerces-2.5.0.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/rt.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/ext/sunec.jar
+   /usr/share/waarp/r66-lib/postgresql-9.4-1206-jdbc4.jar
+   /usr/share/waarp/r66-lib/dom4j-1.6.1.jar
+   /usr/share/waarp/r66-lib/WaarpR66-3.0.6.jar
+   /usr/share/waarp/r66-lib/commons-daemon-1.0.15.jar
+   /usr/share/waarp/r66-lib/slf4j-api-1.7.13.jar
+   /usr/share/waarp/r66-lib/WaarpFtpClient-3.0.1.jar
+
+
+Configuration
+~~~~~~~~~~~~~
+
+::
+
+  <config>
+    <identity>
+      <hostid>server2</hostid>
+      <sslhostid>server2-ssl</sslhostid>
+      <cryptokey>/etc/waarp/certs/cryptokey.des</cryptokey>
+      <authentfile></authentfile>
+    </identity>
+    <server>
+      <serveradmin>admin</serveradmin>
+      <serverpasswd>5a4b7c6a66065cbb622acefec8c3a302</serverpasswd>
+      <usenossl>true</usenossl>
+      <usessl>true</usessl>
+      <httpadmin>/usr/share/waarp/r66-admin</httpadmin>
+      <admkeypath>/etc/waarp/certs/adminkey.jks</admkeypath>
+      <admkeystorepass>password</admkeystorepass>
+      <admkeypass>password</admkeypass>
+      <checkaddress>False</checkaddress>
+      <checkclientaddress>False</checkclientaddress>
+      <multiplemonitors>1</multiplemonitors>
+    </server>
+    <network>
+      <serverport>6668</serverport>
+      <serversslport>6669</serversslport>
+      <serverhttpport>8069</serverhttpport>
+      <serverhttpsport>8068</serverhttpsport>
+    </network>
+    <ssl>
+      <keypath>/etc/waarp/certs/key.jks</keypath>
+      <keystorepass>password</keystorepass>
+      <keypass>password</keypass>
+      <trustkeypath>/etc/waarp/certs/trustkey.jks</trustkeypath>
+      <trustkeystorepass>password</trustkeystorepass>
+      <trustuseclientauthenticate>True</trustuseclientauthenticate>
+    </ssl>
+    <directory>
+      <serverhome>/var/lib/waarp/server2</serverhome>
+      <in>in</in>
+      <out>out</out>
+      <arch>arch</arch>
+      <work>work</work>
+      <conf>conf</conf>
+    </directory>
+    <rest>
+      <restaddress>127.0.0.2</restaddress>
+      <restport>8089</restport>
+      <restssl>true</restssl>
+      <restauthenticated>true</restauthenticated>
+      <resttimelimit>3000</resttimelimit>
+      <restsignature>true</restsignature>
+      <restsigkey>/etc/waarp/certs/restsigning.key</restsigkey>
+      <restmethod>
+        <restname>ALL</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+      <restmethod>
+        <restname>Bandwidth</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+      <restmethod>
+        <restname>Information</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+      <restmethod>
+        <restname>Server</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+      <restmethod>
+        <restname>Control</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+    </rest>
+    <limit>
+      <serverthread>8</serverthread>
+      <clientthread>80</clientthread>
+      <memorylimit>4000000000</memorylimit>
+      <runlimit>10000</runlimit>
+      <delaycommand>5000</delaycommand>
+      <delayretry>10000</delayretry>
+      <timeoutcon>10000</timeoutcon>
+    </limit>
+    <db>
+      <dbdriver>h2</dbdriver>
+      <dbserver>jdbc:h2:/var/lib/waarp/server2/db/waarp;MODE=ORACLE;AUTO_SERVER=TRUE</dbserver>
+      <dbuser>waarp</dbuser>
+      <dbpasswd>waarp</dbpasswd>
+    </db>
+  </config>
+
+
+Opened Sockets
+~~~~~~~~~~~~~~
+
+::
+
+  UDP *:53344
+  24436 socket
+  TCP *:52073 (LISTEN)
+  TCP *:6668 (LISTEN)
+  TCP *:6669 (LISTEN)
+  TCP *:8069 (LISTEN)
+  TCP *:8068 (LISTEN)
+  TCP 127.0.0.2:8089 (LISTEN)
+  TCP 127.0.0.2:8089->127.0.0.2:48997 (ESTABLISHED)
+  30779 socket
+
+
+Status
+~~~~~~
+
+::
+
+  Name: java
+  State:    S (sleeping)
+  Tgid: 8298
+  Pid:  8298
+  PPid: 1
+  TracerPid:    0
+  Uid:  497 497 497 497
+  Gid:  498 498 498 498
+  Utrace:   0
+  FDSize:   2048
+  Groups:   498
+  VmPeak:    2670312 kB
+  VmSize:    2670312 kB
+  VmLck:           0 kB
+  VmHWM:      189732 kB
+  VmRSS:      188680 kB
+  VmData:    2499176 kB
+  VmStk:          88 kB
+  VmExe:           4 kB
+  VmLib:       18536 kB
+  VmPTE:         788 kB
+  VmSwap:          0 kB
+  Threads:  106
+  SigQ: 0/14844
+  SigPnd:   0000000000000000
+  ShdPnd:   0000000000000000
+  SigBlk:   0000000000000000
+  SigIgn:   0000000000001002
+  SigCgt:   2000000181004ccd
+  CapInh:   0000000000000000
+  CapPrm:   0000000000000000
+  CapEff:   0000000000000000
+  CapBnd:   ffffffffffffffff
+  Cpus_allowed: 1
+  Cpus_allowed_list:    0
+  Mems_allowed: 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+  Mems_allowed_list:    0
+  voluntary_ctxt_switches:  1
+  nonvoluntary_ctxt_switches:   7
+
+
+Environment
+~~~~~~~~~~~
+
+::
+
+  TERM=vt100
+  SHELL=/bin/bash
+  USER=waarp
+  PATH=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin:/sbin:/usr/sbin:/bin:/usr/bin
+  WAARP_SERVICE=1
+  PWD=/
+  LANG=en_US.UTF-8
+  SHLVL=3
+  HOME=/var/lib/waarp
+  LOGNAME=waarp
+  _=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin/java
+
+
+
+System Limits
+~~~~~~~~~~~~~
+
+::
+
+  Limit                     Soft Limit           Hard Limit           Units
+  Max cpu time              unlimited            unlimited            seconds
+  Max file size             unlimited            unlimited            bytes
+  Max data size             unlimited            unlimited            bytes
+  Max stack size            10485760             unlimited            bytes
+  Max core file size        0                    unlimited            bytes
+  Max resident set          unlimited            unlimited            bytes
+  Max processes             1024                 14844                processes
+  Max open files            4096                 4096                 files
+  Max locked memory         65536                65536                bytes
+  Max address space         unlimited            unlimited            bytes
+  Max file locks            unlimited            unlimited            locks
+  Max pending signals       14844                14844                signals
+  Max msgqueue size         819200               819200               bytes
+  Max nice priority         0                    0
+  Max realtime priority     0                    0
+  Max realtime timeout      unlimited            unlimited            us
+
+
+Logs
+~~~~
+
+From: /var/log/waarp/server2.log
+
+::
+
+  13/06/2016/10:48:26.765 ERROR [org.waarp.common.database.DbRequest] [main] org.waarp.common.database.DbRequest.select(DbRequest.java:124) : SQL Exception Request:SELECT * FROM  CONFIGURATION  Table "CONFIGURATION" not found; SQL statement:
+  SELECT * FROM  CONFIGURATION  [42102-176]
+  13/06/2016/10:48:26.769 ERROR [org.waarp.common.database.DbSession] [main] org.waarp.common.database.DbSession.error(DbSession.java:251) : SQLException: Table "CONFIGURATION" not found; SQL statement:
+  SELECT * FROM  CONFIGURATION  [42102-176] SQLState: 42S02VendorError: 42102
+  13/06/2016/10:48:26.773 WARN [org.waarp.openr66.configuration.FileBasedConfiguration] [main] org.waarp.openr66.configuration.FileBasedConfiguration.loadDatabase(FileBasedConfiguration.java:1858) : Database is not yet initiated: run ServerInitDatabase -initdb first
+  org.waarp.common.database.exception.WaarpDatabaseSqlException: SQL Exception Request:SELECT * FROM  CONFIGURATION
+    at org.waarp.common.database.DbRequest.select(DbRequest.java:128) ~[WaarpCommon-3.0.6.jar:na]
+    at org.waarp.openr66.configuration.FileBasedConfiguration.loadDatabase(FileBasedConfiguration.java:1856) [WaarpR66-3.0.6.jar:na]
+    at org.waarp.openr66.configuration.FileBasedConfiguration.setConfigurationInitDatabase(FileBasedConfiguration.java:2130) [WaarpR66-3.0.6.jar:na]
+    at org.waarp.openr66.server.ServerInitDatabase.main(ServerInitDatabase.java:119) [WaarpR66-3.0.6.jar:na]
+  Caused by: org.h2.jdbc.JdbcSQLException: Table "CONFIGURATION" not found; SQL statement:
+  SELECT * FROM  CONFIGURATION  [42102-176]
+    at org.h2.message.DbException.getJdbcSQLException(DbException.java:344) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.message.DbException.get(DbException.java:178) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.message.DbException.get(DbException.java:154) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.readTableOrView(Parser.java:5213) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.readTableFilter(Parser.java:1220) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1859) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelectSimple(Parser.java:1968) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelectSub(Parser.java:1853) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelectUnion(Parser.java:1674) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelect(Parser.java:1662) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parsePrepared(Parser.java:434) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parse(Parser.java:306) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parse(Parser.java:278) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.prepareCommand(Parser.java:243) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.engine.Session.prepareLocal(Session.java:442) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.engine.Session.prepareCommand(Session.java:384) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:172) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:160) ~[h2-1.3.176.jar:1.3.176]
+    at org.waarp.common.database.DbRequest.select(DbRequest.java:120) ~[WaarpCommon-3.0.6.jar:na]
+    ... 3 common frames omitted
+  13/06/2016/10:49:24.468 WARN [org.waarp.openr66.configuration.FileBasedConfiguration] [main] org.waarp.openr66.configuration.FileBasedConfiguration.loadServerParam(FileBasedConfiguration.java:1038) : Multiple Monitor configuration unactive
+  13/06/2016/10:49:25.421 WARN [io.netty.util.internal.ThreadLocalRandom] [main] Failed to generate a seed from SecureRandom within 3 seconds. Not enough entropy?
+  13/06/2016/10:49:25.580 WARN [org.waarp.openr66.protocol.configuration.Configuration] [main] org.waarp.openr66.protocol.configuration.Configuration.pipelineInit(Configuration.java:662) : Server Thread: 8 Client Thread: 80 Runner Thread: 10000
+  13/06/2016/10:49:25.860 WARN [org.waarp.openr66.server.R66Server] [main] org.waarp.openr66.server.R66Server.main(R66Server.java:55) : Server OpenR66 starts for server2 : Config: { ServerPort: 6668, ServerSslPort: 6669, ServerView: 8069, ServerAdmin: 8068, ThriftPort: 'NoThriftSupport', RestAddress: ['127.0.0.2:8089'], TimeOut: 10000, BaseDir: '/var/lib/waarp/server2', DigestAlgo: 'MD5', checkRemote: false, checkClient: false, snmpActive: false, chrootChecked: true, blacklist: true, isHostProxified: false}
+  13/06/2016/10:50:42.381 WARN [org.waarp.gateway.kernel.rest.HttpRestHandler] [HttpWorker-1] org.waarp.gateway.kernel.rest.HttpRestHandler.exceptionCaught(HttpRestHandler.java:747) : Exception java.lang.RuntimeException: java.security.KeyException
+  io.netty.handler.codec.DecoderException: java.lang.RuntimeException: java.security.KeyException
+    at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:418) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:245) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:83) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:154) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:354) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:145) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:1078) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:125) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:510) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:467) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:381) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+  Caused by: java.lang.RuntimeException: java.security.KeyException
+    at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1429) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:535) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.readNetRecord(SSLEngineImpl.java:813) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:781) ~[na:1.8.0_91]
+    at javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:624) ~[na:1.8.0_91]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1080) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:958) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:895) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:387) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    ... 13 common frames omitted
+  Caused by: java.security.ProviderException: java.security.KeyException
+    at sun.security.ec.ECKeyPairGenerator.generateKeyPair(ECKeyPairGenerator.java:147) ~[sunec.jar:1.8.0_91]
+    at java.security.KeyPairGenerator$Delegate.generateKeyPair(KeyPairGenerator.java:703) ~[na:1.8.0_91]
+    at sun.security.ssl.ECDHCrypt.<init>(ECDHCrypt.java:64) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.setupEphemeralECDHKeys(ServerHandshaker.java:1432) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.trySetCipherSuite(ServerHandshaker.java:1219) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.chooseCipherSuite(ServerHandshaker.java:1023) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.clientHello(ServerHandshaker.java:738) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.processMessage(ServerHandshaker.java:221) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$1.run(Handshaker.java:919) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$1.run(Handshaker.java:916) ~[na:1.8.0_91]
+    at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1369) ~[na:1.8.0_91]
+    at io.netty.handler.ssl.SslHandler.runDelegatedTasks(SslHandler.java:1106) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:997) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    ... 15 common frames omitted
+  Caused by: java.security.KeyException: null
+    at sun.security.ec.ECKeyPairGenerator.generateECKeyPair(Native Method) ~[sunec.jar:1.8.0_91]
+    at sun.security.ec.ECKeyPairGenerator.generateKeyPair(ECKeyPairGenerator.java:128) ~[sunec.jar:1.8.0_91]
+    ... 29 common frames omitted
+  13/06/2016/10:50:42.431 WARN [io.netty.channel.DefaultChannelPipeline] [HttpWorker-1] An exception was thrown by a user handler's exceptionCaught() method:
+  java.lang.NullPointerException: null
+    at org.waarp.gateway.kernel.rest.HttpRestHandler.forceClosing(HttpRestHandler.java:602) ~[WaarpGatewayKernel-3.0.5.jar:na]
+    at org.waarp.gateway.kernel.rest.HttpRestHandler.exceptionCaught(HttpRestHandler.java:764) ~[WaarpGatewayKernel-3.0.5.jar:na]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeExceptionCaughtNow(ChannelHandlerInvokerUtil.java:64) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeExceptionCaught(DefaultChannelHandlerInvoker.java:111) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeExceptionCaughtNow(ChannelHandlerInvokerUtil.java:64) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeExceptionCaught(DefaultChannelHandlerInvoker.java:111) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireExceptionCaught(CombinedChannelDuplexHandler.java:421) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerAdapter.exceptionCaught(ChannelHandlerAdapter.java:78) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.CombinedChannelDuplexHandler$1.fireExceptionCaught(CombinedChannelDuplexHandler.java:144) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.CombinedChannelDuplexHandler.exceptionCaught(CombinedChannelDuplexHandler.java:223) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeExceptionCaughtNow(ChannelHandlerInvokerUtil.java:64) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeExceptionCaught(DefaultChannelHandlerInvoker.java:111) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.exceptionCaught(SslHandler.java:738) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeExceptionCaughtNow(ChannelHandlerInvokerUtil.java:64) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.notifyHandlerException(ChannelHandlerInvokerUtil.java:219) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:85) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:154) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:354) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:145) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:1078) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:125) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:510) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:467) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:381) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+  13/06/2016/10:50:42.433 WARN [io.netty.channel.DefaultChannelPipeline] [HttpWorker-1] .. and the cause of the exceptionCaught() was:
+  io.netty.handler.codec.DecoderException: java.lang.RuntimeException: java.security.KeyException
+    at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:418) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:245) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:83) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:154) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:354) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:145) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:1078) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:125) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:510) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:467) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:381) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+  Caused by: java.lang.RuntimeException: java.security.KeyException
+    at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1429) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:535) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.readNetRecord(SSLEngineImpl.java:813) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:781) ~[na:1.8.0_91]
+    at javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:624) ~[na:1.8.0_91]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1080) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:958) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:895) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:387) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    ... 13 common frames omitted
+  Caused by: java.security.ProviderException: java.security.KeyException
+    at sun.security.ec.ECKeyPairGenerator.generateKeyPair(ECKeyPairGenerator.java:147) ~[sunec.jar:1.8.0_91]
+    at java.security.KeyPairGenerator$Delegate.generateKeyPair(KeyPairGenerator.java:703) ~[na:1.8.0_91]
+    at sun.security.ssl.ECDHCrypt.<init>(ECDHCrypt.java:64) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.setupEphemeralECDHKeys(ServerHandshaker.java:1432) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.trySetCipherSuite(ServerHandshaker.java:1219) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.chooseCipherSuite(ServerHandshaker.java:1023) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.clientHello(ServerHandshaker.java:738) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.processMessage(ServerHandshaker.java:221) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$1.run(Handshaker.java:919) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$1.run(Handshaker.java:916) ~[na:1.8.0_91]
+    at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1369) ~[na:1.8.0_91]
+    at io.netty.handler.ssl.SslHandler.runDelegatedTasks(SslHandler.java:1106) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:997) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    ... 15 common frames omitted
+  Caused by: java.security.KeyException: null
+    at sun.security.ec.ECKeyPairGenerator.generateECKeyPair(Native Method) ~[sunec.jar:1.8.0_91]
+    at sun.security.ec.ECKeyPairGenerator.generateKeyPair(ECKeyPairGenerator.java:128) ~[sunec.jar:1.8.0_91]
+    ... 29 common frames omitted
+
+Instance gwftp
+--------------
+
+Type:
+  Waarp R66 Server
+Id:
+  gwftp (gwftp-ssl)
+Command line:
+  /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin/java -server -Xms256m -Xmx512m -cp /usr/share/waarp/r66-lib/WaarpR66-3.0.6.jar:/usr/share/waarp/r66-lib/* -Dlogback.configurationFile=/etc/waarp/conf.d/gwftp/logback-server.xml org.waarp.openr66.server.R66Server /etc/waarp/conf.d/gwftp/server.xml
+Working directory:
+  /
+Pid:
+  8381
+User:
+  waarp (497)
+Group:
+  waarp (498)
+Jvm:
+  /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin/java
+  openjdk version "1.8.0_91"
+  OpenJDK Runtime Environment (build 1.8.0_91-b14)
+  OpenJDK 64-Bit Server VM (build 25.91-b14, mixed mode)
+RSS:
+  191620 (9.9%)
+CPU:
+  3.7 %
+VSZ:
+  2671340
+Thread count:
+  106
+File descriptor count:
+  1566
+
+
+Jars used
+~~~~~~~~~
+
+::
+
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/ext/sunjce_provider.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/jce.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/resources.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/jsse.jar
+   /usr/share/waarp/r66-lib/jaxen-1.1.6.jar
+   /usr/share/waarp/r66-lib/logback-core-1.1.3.jar
+   /usr/share/waarp/r66-lib/snmp4j-2.4.2.jar
+   /usr/share/waarp/r66-lib/WaarpDigest-3.0.1.jar
+   /usr/share/waarp/r66-lib/snmp4j-agent-2.4.1.jar
+   /usr/share/waarp/r66-lib/logback-classic-1.1.3.jar
+   /usr/share/waarp/r66-lib/mariadb-java-client-1.3.4.jar
+   /usr/share/waarp/r66-lib/libthrift-0.9.3.jar
+   /usr/share/waarp/r66-lib/mysql-connector-java-5.1.36.jar
+   /usr/share/waarp/r66-lib/WaarpThrift-3.0.2.jar
+   /usr/share/waarp/r66-lib/ojdbc6-6.jar
+   /usr/share/waarp/r66-lib/netty-all-4.1.0.CR3.jar
+   /usr/share/waarp/r66-lib/commons-exec-1.3.jar
+   /usr/share/waarp/r66-lib/javassist-3.20.0-GA.jar
+   /usr/share/waarp/r66-lib/WaarpSnmp-3.0.2.jar
+   /usr/share/waarp/r66-lib/httpcore-4.4.1.jar
+   /usr/share/waarp/r66-lib/WaarpPassword-3.0.2.jar
+   /usr/share/waarp/r66-lib/XML-APIS-2.5.0.jar
+   /usr/share/waarp/r66-lib/jackson-databind-2.7.1-1.jar
+   /usr/share/waarp/r66-lib/commons-io-2.4.jar
+   /usr/share/waarp/r66-lib/commons-net-3.4-ftp.jar
+   /usr/share/waarp/r66-lib/WaarpCommon-3.0.6.jar
+   /usr/share/waarp/r66-lib/WaarpGatewayKernel-3.0.5.jar
+   /usr/share/waarp/r66-lib/WaarpR66Gui-3.0.1.jar
+   /usr/share/waarp/r66-lib/javasysmon-0.3.6.jar
+   /usr/share/waarp/r66-lib/commons-compress-1.10.jar
+   /usr/share/waarp/r66-lib/jackson-core-2.7.1.jar
+   /usr/share/waarp/r66-lib/WaarpProxyR66-3.0.3.jar
+   /usr/share/waarp/r66-lib/commons-codec-1.10.jar
+   /usr/share/waarp/r66-lib/jackson-annotations-2.7.1.jar
+   /usr/share/waarp/r66-lib/ftp4j-1.7.2.jar
+   /usr/share/waarp/r66-lib/WaarpAdministrator-3.0.1.jar
+   /usr/share/waarp/r66-lib/commons-daemon-1.0.15.jar
+   /usr/share/waarp/r66-lib/xml-apis-1.0.b2.jar
+   /usr/share/waarp/r66-lib/httpclient-4.4.1.jar
+   /usr/share/waarp/r66-lib/slf4j-api-1.7.13.jar
+   /usr/share/waarp/r66-lib/h2-1.3.176.jar
+   /usr/share/waarp/r66-lib/joda-time-2.9.1.jar
+   /usr/share/waarp/r66-lib/WaarpFtp-Core-3.0.3.jar
+   /usr/share/waarp/r66-lib/WaarpXmlEditor-1.0.1.jar
+   /usr/share/waarp/r66-lib/XMLEditor-2.2.jar
+   /usr/share/waarp/r66-lib/log4j-1.2.14.jar
+   /usr/share/waarp/r66-lib/Xerces-2.5.0.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/rt.jar
+   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/lib/ext/sunec.jar
+   /usr/share/waarp/r66-lib/postgresql-9.4-1206-jdbc4.jar
+   /usr/share/waarp/r66-lib/dom4j-1.6.1.jar
+   /usr/share/waarp/r66-lib/WaarpR66-3.0.6.jar
+   /usr/share/waarp/r66-lib/WaarpExec-3.0.1.jar
+   /usr/share/waarp/r66-lib/commons-logging-1.2.jar
+   /usr/share/waarp/r66-lib/WaarpFtpClient-3.0.1.jar
+
+
+Configuration
+~~~~~~~~~~~~~
+
+::
+
+  <config>
+    <identity>
+      <hostid>gwftp</hostid>
+      <sslhostid>gwftp-ssl</sslhostid>
+      <cryptokey>/etc/waarp/certs/cryptokey.des</cryptokey>
+      <authentfile></authentfile>
+    </identity>
+    <server>
+      <serveradmin>admin</serveradmin>
+      <serverpasswd>5a4b7c6a66065cbb622acefec8c3a302</serverpasswd>
+      <usenossl>true</usenossl>
+      <usessl>true</usessl>
+      <httpadmin>/usr/share/waarp/r66-admin</httpadmin>
+      <admkeypath>/etc/waarp/certs/adminkey.jks</admkeypath>
+      <admkeystorepass>password</admkeystorepass>
+      <admkeypass>password</admkeypass>
+      <checkaddress>False</checkaddress>
+      <checkclientaddress>False</checkclientaddress>
+      <multiplemonitors>1</multiplemonitors>
+    </server>
+    <network>
+      <serverport>6672</serverport>
+      <serversslport>6673</serversslport>
+      <serverhttpport>8073</serverhttpport>
+      <serverhttpsport>8072</serverhttpsport>
+    </network>
+    <ssl>
+      <keypath>/etc/waarp/certs/key.jks</keypath>
+      <keystorepass>password</keystorepass>
+      <keypass>password</keypass>
+      <trustkeypath>/etc/waarp/certs/trustkey.jks</trustkeypath>
+      <trustkeystorepass>password</trustkeystorepass>
+      <trustuseclientauthenticate>True</trustuseclientauthenticate>
+    </ssl>
+    <directory>
+      <serverhome>/var/lib/waarp/gwftp</serverhome>
+      <in>in</in>
+      <out>out</out>
+      <arch>arch</arch>
+      <work>work</work>
+      <conf>conf</conf>
+    </directory>
+    <rest>
+      <restaddress>127.0.0.4</restaddress>
+      <restport>8091</restport>
+      <restssl>true</restssl>
+      <restauthenticated>true</restauthenticated>
+      <resttimelimit>3000</resttimelimit>
+      <restsignature>true</restsignature>
+      <restsigkey>/etc/waarp/certs/restsigning.key</restsigkey>
+      <restmethod>
+        <restname>ALL</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+      <restmethod>
+        <restname>Bandwidth</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+      <restmethod>
+        <restname>Information</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+      <restmethod>
+        <restname>Server</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+      <restmethod>
+        <restname>Control</restname>
+        <restcrud>CRUD</restcrud>
+      </restmethod>
+    </rest>
+    <limit>
+      <serverthread>8</serverthread>
+      <clientthread>80</clientthread>
+      <memorylimit>4000000000</memorylimit>
+      <runlimit>10000</runlimit>
+      <delaycommand>5000</delaycommand>
+      <delayretry>10000</delayretry>
+      <timeoutcon>10000</timeoutcon>
+    </limit>
+    <db>
+      <dbdriver>h2</dbdriver>
+      <dbserver>jdbc:h2:/var/lib/waarp/gwftp/db/waarp;MODE=ORACLE;AUTO_SERVER=TRUE</dbserver>
+      <dbuser>waarp</dbuser>
+      <dbpasswd>waarp</dbpasswd>
+    </db>
+  </config>
+
+
+Opened Sockets
+~~~~~~~~~~~~~~
+
+::
+
+  UDP *:47640
+  25243 socket
+  TCP *:33948 (LISTEN)
+  TCP *:6672 (LISTEN)
+  TCP *:6673 (LISTEN)
+  TCP *:8073 (LISTEN)
+  TCP *:8072 (LISTEN)
+  TCP 127.0.0.4:8091 (LISTEN)
+  TCP 127.0.0.1:33948->127.0.0.1:40778 (ESTABLISHED)
+  TCP 127.0.0.1:33948->127.0.0.1:40780 (ESTABLISHED)
+  TCP 127.0.0.4:8091->127.0.0.4:42082 (ESTABLISHED)
+  30785 socket
+
+
+Status
+~~~~~~
+
+::
+
+  Name: java
+  State:    S (sleeping)
+  Tgid: 8381
+  Pid:  8381
+  PPid: 1
+  TracerPid:    0
+  Uid:  497 497 497 497
+  Gid:  498 498 498 498
+  Utrace:   0
+  FDSize:   2048
+  Groups:   498
+  VmPeak:    2671728 kB
+  VmSize:    2671340 kB
+  VmLck:           0 kB
+  VmHWM:      192832 kB
+  VmRSS:      191620 kB
+  VmData:    2500204 kB
+  VmStk:          88 kB
+  VmExe:           4 kB
+  VmLib:       18536 kB
+  VmPTE:         788 kB
+  VmSwap:          0 kB
+  Threads:  106
+  SigQ: 0/14844
+  SigPnd:   0000000000000000
+  ShdPnd:   0000000000000000
+  SigBlk:   0000000000000000
+  SigIgn:   0000000000001002
+  SigCgt:   2000000181004ccd
+  CapInh:   0000000000000000
+  CapPrm:   0000000000000000
+  CapEff:   0000000000000000
+  CapBnd:   ffffffffffffffff
+  Cpus_allowed: 1
+  Cpus_allowed_list:    0
+  Mems_allowed: 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+  Mems_allowed_list:    0
+  voluntary_ctxt_switches:  1
+  nonvoluntary_ctxt_switches:   6
+
+
+Environment
+~~~~~~~~~~~
+
+::
+
+  TERM=vt100
+  SHELL=/bin/bash
+  USER=waarp
+  PATH=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin:/sbin:/usr/sbin:/bin:/usr/bin
+  WAARP_SERVICE=1
+  PWD=/
+  LANG=en_US.UTF-8
+  SHLVL=3
+  HOME=/var/lib/waarp
+  LOGNAME=waarp
+  _=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el6.x86_64/jre/bin/java
+
+
+
+System Limits
+~~~~~~~~~~~~~
+
+::
+
+  Limit                     Soft Limit           Hard Limit           Units
+  Max cpu time              unlimited            unlimited            seconds
+  Max file size             unlimited            unlimited            bytes
+  Max data size             unlimited            unlimited            bytes
+  Max stack size            10485760             unlimited            bytes
+  Max core file size        0                    unlimited            bytes
+  Max resident set          unlimited            unlimited            bytes
+  Max processes             1024                 14844                processes
+  Max open files            4096                 4096                 files
+  Max locked memory         65536                65536                bytes
+  Max address space         unlimited            unlimited            bytes
+  Max file locks            unlimited            unlimited            locks
+  Max pending signals       14844                14844                signals
+  Max msgqueue size         819200               819200               bytes
+  Max nice priority         0                    0
+  Max realtime priority     0                    0
+  Max realtime timeout      unlimited            unlimited            us
+
+
+Logs
+~~~~
+
+From: /var/log/waarp/gwftp.log
+
+::
+
+  13/06/2016/10:48:30.296 ERROR [org.waarp.common.database.DbRequest] [main] org.waarp.common.database.DbRequest.select(DbRequest.java:124) : SQL Exception Request:SELECT * FROM  CONFIGURATION  Table "CONFIGURATION" not found; SQL statement:
+  SELECT * FROM  CONFIGURATION  [42102-176]
+  13/06/2016/10:48:30.298 ERROR [org.waarp.common.database.DbSession] [main] org.waarp.common.database.DbSession.error(DbSession.java:251) : SQLException: Table "CONFIGURATION" not found; SQL statement:
+  SELECT * FROM  CONFIGURATION  [42102-176] SQLState: 42S02VendorError: 42102
+  13/06/2016/10:48:30.302 WARN [org.waarp.openr66.configuration.FileBasedConfiguration] [main] org.waarp.openr66.configuration.FileBasedConfiguration.loadDatabase(FileBasedConfiguration.java:1858) : Database is not yet initiated: run ServerInitDatabase -initdb first
+  org.waarp.common.database.exception.WaarpDatabaseSqlException: SQL Exception Request:SELECT * FROM  CONFIGURATION
+    at org.waarp.common.database.DbRequest.select(DbRequest.java:128) ~[WaarpCommon-3.0.6.jar:na]
+    at org.waarp.openr66.configuration.FileBasedConfiguration.loadDatabase(FileBasedConfiguration.java:1856) [WaarpR66-3.0.6.jar:na]
+    at org.waarp.openr66.configuration.FileBasedConfiguration.setConfigurationInitDatabase(FileBasedConfiguration.java:2130) [WaarpR66-3.0.6.jar:na]
+    at org.waarp.openr66.server.ServerInitDatabase.main(ServerInitDatabase.java:119) [WaarpR66-3.0.6.jar:na]
+  Caused by: org.h2.jdbc.JdbcSQLException: Table "CONFIGURATION" not found; SQL statement:
+  SELECT * FROM  CONFIGURATION  [42102-176]
+    at org.h2.message.DbException.getJdbcSQLException(DbException.java:344) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.message.DbException.get(DbException.java:178) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.message.DbException.get(DbException.java:154) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.readTableOrView(Parser.java:5213) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.readTableFilter(Parser.java:1220) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1859) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelectSimple(Parser.java:1968) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelectSub(Parser.java:1853) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelectUnion(Parser.java:1674) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parseSelect(Parser.java:1662) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parsePrepared(Parser.java:434) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parse(Parser.java:306) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.parse(Parser.java:278) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.command.Parser.prepareCommand(Parser.java:243) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.engine.Session.prepareLocal(Session.java:442) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.engine.Session.prepareCommand(Session.java:384) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:172) ~[h2-1.3.176.jar:1.3.176]
+    at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:160) ~[h2-1.3.176.jar:1.3.176]
+    at org.waarp.common.database.DbRequest.select(DbRequest.java:120) ~[WaarpCommon-3.0.6.jar:na]
+    ... 3 common frames omitted
+  13/06/2016/10:48:34.034 WARN [org.waarp.gateway.ftp.config.FileBasedConfiguration] [main] org.waarp.gateway.ftp.config.FileBasedConfiguration.loadServerParam(FileBasedConfiguration.java:872) : NO SNMP configuration file
+  13/06/2016/10:48:34.039 WARN [org.waarp.gateway.ftp.config.FileBasedConfiguration] [main] org.waarp.gateway.ftp.config.FileBasedConfiguration.loadNetworkServer(FileBasedConfiguration.java:1052) : Passive Port range Min: 10000 Max: 30000
+  13/06/2016/10:49:29.637 WARN [org.waarp.openr66.configuration.FileBasedConfiguration] [main] org.waarp.openr66.configuration.FileBasedConfiguration.loadServerParam(FileBasedConfiguration.java:1038) : Multiple Monitor configuration unactive
+  13/06/2016/10:49:31.413 WARN [io.netty.util.internal.ThreadLocalRandom] [main] Failed to generate a seed from SecureRandom within 3 seconds. Not enough entropy?
+  13/06/2016/10:49:31.684 WARN [org.waarp.openr66.protocol.configuration.Configuration] [main] org.waarp.openr66.protocol.configuration.Configuration.pipelineInit(Configuration.java:662) : Server Thread: 8 Client Thread: 80 Runner Thread: 10000
+  13/06/2016/10:49:32.150 WARN [org.waarp.openr66.server.R66Server] [main] org.waarp.openr66.server.R66Server.main(R66Server.java:55) : Server OpenR66 starts for gwftp : Config: { ServerPort: 6672, ServerSslPort: 6673, ServerView: 8073, ServerAdmin: 8072, ThriftPort: 'NoThriftSupport', RestAddress: ['127.0.0.4:8091'], TimeOut: 10000, BaseDir: '/var/lib/waarp/gwftp', DigestAlgo: 'MD5', checkRemote: false, checkClient: false, snmpActive: false, chrootChecked: true, blacklist: true, isHostProxified: false}
+  13/06/2016/10:49:34.085 WARN [org.waarp.gateway.ftp.config.FileBasedConfiguration] [main] org.waarp.gateway.ftp.config.FileBasedConfiguration.loadServerParam(FileBasedConfiguration.java:872) : NO SNMP configuration file
+  13/06/2016/10:49:34.423 WARN [org.waarp.gateway.ftp.config.FileBasedConfiguration] [main] org.waarp.gateway.ftp.config.FileBasedConfiguration.loadNetworkServer(FileBasedConfiguration.java:1052) : Passive Port range Min: 10000 Max: 30000
+  13/06/2016/10:49:35.175 WARN [io.netty.util.internal.ThreadLocalRandom] [main] Failed to generate a seed from SecureRandom within 3 seconds. Not enough entropy?
+  13/06/2016/10:49:35.350 WARN [org.waarp.gateway.ftp.config.FileBasedConfiguration] [main] org.waarp.gateway.ftp.config.FileBasedConfiguration.configureHttps(FileBasedConfiguration.java:1369) : Start Https Support on port: 8075 with no compression support
+  13/06/2016/10:49:35.397 WARN [org.waarp.gateway.ftp.ExecGatewayFtpServer] [main] org.waarp.gateway.ftp.ExecGatewayFtpServer.initialize(ExecGatewayFtpServer.java:114) : FTP started Explicit SSL On
+  13/06/2016/10:50:47.396 WARN [org.waarp.gateway.kernel.rest.HttpRestHandler] [HttpWorker-1] org.waarp.gateway.kernel.rest.HttpRestHandler.exceptionCaught(HttpRestHandler.java:747) : Exception java.lang.RuntimeException: java.security.KeyException
+  io.netty.handler.codec.DecoderException: java.lang.RuntimeException: java.security.KeyException
+    at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:418) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:245) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:83) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:154) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:354) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:145) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:1078) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:125) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:510) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:467) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:381) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+  Caused by: java.lang.RuntimeException: java.security.KeyException
+    at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1429) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:535) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.readNetRecord(SSLEngineImpl.java:813) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:781) ~[na:1.8.0_91]
+    at javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:624) ~[na:1.8.0_91]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1080) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:958) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:895) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:387) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    ... 13 common frames omitted
+  Caused by: java.security.ProviderException: java.security.KeyException
+    at sun.security.ec.ECKeyPairGenerator.generateKeyPair(ECKeyPairGenerator.java:147) ~[sunec.jar:1.8.0_91]
+    at java.security.KeyPairGenerator$Delegate.generateKeyPair(KeyPairGenerator.java:703) ~[na:1.8.0_91]
+    at sun.security.ssl.ECDHCrypt.<init>(ECDHCrypt.java:64) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.setupEphemeralECDHKeys(ServerHandshaker.java:1432) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.trySetCipherSuite(ServerHandshaker.java:1219) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.chooseCipherSuite(ServerHandshaker.java:1023) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.clientHello(ServerHandshaker.java:738) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.processMessage(ServerHandshaker.java:221) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$1.run(Handshaker.java:919) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$1.run(Handshaker.java:916) ~[na:1.8.0_91]
+    at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1369) ~[na:1.8.0_91]
+    at io.netty.handler.ssl.SslHandler.runDelegatedTasks(SslHandler.java:1106) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:997) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    ... 15 common frames omitted
+  Caused by: java.security.KeyException: null
+    at sun.security.ec.ECKeyPairGenerator.generateECKeyPair(Native Method) ~[sunec.jar:1.8.0_91]
+    at sun.security.ec.ECKeyPairGenerator.generateKeyPair(ECKeyPairGenerator.java:128) ~[sunec.jar:1.8.0_91]
+    ... 29 common frames omitted
+  13/06/2016/10:50:47.419 WARN [io.netty.channel.DefaultChannelPipeline] [HttpWorker-1] An exception was thrown by a user handler's exceptionCaught() method:
+  java.lang.NullPointerException: null
+    at org.waarp.gateway.kernel.rest.HttpRestHandler.forceClosing(HttpRestHandler.java:602) ~[WaarpGatewayKernel-3.0.5.jar:na]
+    at org.waarp.gateway.kernel.rest.HttpRestHandler.exceptionCaught(HttpRestHandler.java:764) ~[WaarpGatewayKernel-3.0.5.jar:na]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeExceptionCaughtNow(ChannelHandlerInvokerUtil.java:64) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeExceptionCaught(DefaultChannelHandlerInvoker.java:111) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeExceptionCaughtNow(ChannelHandlerInvokerUtil.java:64) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeExceptionCaught(DefaultChannelHandlerInvoker.java:111) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireExceptionCaught(CombinedChannelDuplexHandler.java:421) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerAdapter.exceptionCaught(ChannelHandlerAdapter.java:78) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.CombinedChannelDuplexHandler$1.fireExceptionCaught(CombinedChannelDuplexHandler.java:144) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.CombinedChannelDuplexHandler.exceptionCaught(CombinedChannelDuplexHandler.java:223) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeExceptionCaughtNow(ChannelHandlerInvokerUtil.java:64) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeExceptionCaught(DefaultChannelHandlerInvoker.java:111) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:131) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.exceptionCaught(SslHandler.java:738) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeExceptionCaughtNow(ChannelHandlerInvokerUtil.java:64) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.notifyHandlerException(ChannelHandlerInvokerUtil.java:219) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:85) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:154) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:354) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:145) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:1078) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:125) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:510) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:467) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:381) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+  13/06/2016/10:50:47.421 WARN [io.netty.channel.DefaultChannelPipeline] [HttpWorker-1] .. and the cause of the exceptionCaught() was:
+  io.netty.handler.codec.DecoderException: java.lang.RuntimeException: java.security.KeyException
+    at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:418) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:245) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:83) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:154) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:354) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:145) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:1078) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:125) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:510) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:467) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:381) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742) [netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+  Caused by: java.lang.RuntimeException: java.security.KeyException
+    at sun.security.ssl.Handshaker.checkThrown(Handshaker.java:1429) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.checkTaskThrown(SSLEngineImpl.java:535) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.readNetRecord(SSLEngineImpl.java:813) ~[na:1.8.0_91]
+    at sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:781) ~[na:1.8.0_91]
+    at javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:624) ~[na:1.8.0_91]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1080) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:958) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:895) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:387) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    ... 13 common frames omitted
+  Caused by: java.security.ProviderException: java.security.KeyException
+    at sun.security.ec.ECKeyPairGenerator.generateKeyPair(ECKeyPairGenerator.java:147) ~[sunec.jar:1.8.0_91]
+    at java.security.KeyPairGenerator$Delegate.generateKeyPair(KeyPairGenerator.java:703) ~[na:1.8.0_91]
+    at sun.security.ssl.ECDHCrypt.<init>(ECDHCrypt.java:64) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.setupEphemeralECDHKeys(ServerHandshaker.java:1432) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.trySetCipherSuite(ServerHandshaker.java:1219) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.chooseCipherSuite(ServerHandshaker.java:1023) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.clientHello(ServerHandshaker.java:738) ~[na:1.8.0_91]
+    at sun.security.ssl.ServerHandshaker.processMessage(ServerHandshaker.java:221) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$1.run(Handshaker.java:919) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$1.run(Handshaker.java:916) ~[na:1.8.0_91]
+    at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_91]
+    at sun.security.ssl.Handshaker$DelegatedTask.run(Handshaker.java:1369) ~[na:1.8.0_91]
+    at io.netty.handler.ssl.SslHandler.runDelegatedTasks(SslHandler.java:1106) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:997) ~[netty-all-4.1.0.CR3.jar:4.1.0.CR3]
+    ... 15 common frames omitted
+  Caused by: java.security.KeyException: null
+    at sun.security.ec.ECKeyPairGenerator.generateECKeyPair(Native Method) ~[sunec.jar:1.8.0_91]
+    at sun.security.ec.ECKeyPairGenerator.generateKeyPair(ECKeyPairGenerator.java:128) ~[sunec.jar:1.8.0_91]
+    ... 29 common frames omitted
+
