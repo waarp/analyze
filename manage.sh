@@ -79,6 +79,43 @@ make_package() {
   rm -rf $TMP_DIR/*
 }
 
-mkdir -p dist
-make_package "linux" "amd64"
-make_package "linux" "386"
+build() {
+  mkdir -p dist
+  make_package "linux" "amd64"
+  make_package "linux" "386"
+}
+
+bump() {
+  if [[ $1 == "" ]]; then
+    echo "ERROR: Provide a version as argument"
+    exit 3
+  fi
+
+  sed -i -e "s|version = '[0-9\.]\+'|version = '"$1"'|" doc/source/conf.py
+  sed -i -e "s|release = '[0-9\.]\+'|release = '"$1"'|" doc/source/conf.py
+  sed -i -e 's|const VERSION_NUM = "[0-9\.]\+"|const VERSION_NUM = "'$1'"|' src/cmd/waarp-analyze/main.go
+
+  git add doc/source/conf.py src/cmd/waarp-analyze/main.go
+  git commit -m "version bump to $1"
+  git tag $1
+}
+
+usage() {
+  echo "Usage: $0 task"
+  echo "TASKS"
+  echo "  build         Builds packages"
+  echo "  bump VERSION  Bumps version everywhere it is used"
+  echo "  help          Show this help"
+}
+
+case $1 in
+  build)
+    build
+    ;;
+  bump)
+    bump $2
+    ;;
+  *)
+    usage
+    ;;
+esac
