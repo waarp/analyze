@@ -100,10 +100,32 @@ bump() {
   git tag $1
 }
 
+doc_build() {
+  cd doc
+
+  make clean
+
+  make -e SPHINXBUILD=.venv/bin/sphinx-build html
+  mv build/html build/html-en
+
+  for locale in fr; do
+    make -e SPHINXBUILD=.venv/bin/sphinx-build -e SPHINXOPTS="-D language='$locale'" html
+    mv build/html build/html-$locale
+  done
+}
+
+doc_update() {
+  cd doc
+  make -e SPHINXBUILD=.venv/bin/sphinx-build clean gettext
+  ./.venv/bin/sphinx-intl update -p build/locale -l fr
+}
+
 usage() {
   echo "Usage: $0 task"
   echo "TASKS"
   echo "  build         Builds packages"
+  echo "  doc build     Builds documentation"
+  echo "  doc update    Updates documentation i18n"
   echo "  bump VERSION  Bumps version everywhere it is used"
   echo "  help          Show this help"
 }
@@ -115,6 +137,19 @@ case $1 in
   bump)
     bump $2
     ;;
+  doc)
+    case $2 in
+      update)
+        doc_update
+        ;;
+      build)
+        doc_build
+        ;;
+      *)
+        usage
+        ;;
+      esac
+      ;;
   *)
     usage
     ;;

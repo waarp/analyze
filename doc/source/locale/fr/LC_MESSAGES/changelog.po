@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Waarp SAS
+# This file is distributed under the same license as the Waarp Analyze
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Waarp Analyze 0.0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-13 17:29+0200\n"
+"PO-Revision-Date: 2016-06-13 17:51+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: ../../source/changelog.rst:2
+msgid "Changelog"
+msgstr "Changements"
+
+#: ../../source/changelog.rst:6
+msgid "0.0.2 (2016-06-13)"
+msgstr "0.0.2 (2016-06-13)"
+
+#: ../../source/changelog.rst:8
+msgid "First public version"
+msgstr "première version publique"
+
+#: ../../source/changelog.rst:11
+msgid "0.0.1"
+msgstr "0.0.1"
+
+#: ../../source/changelog.rst:13
+msgid "First version"
+msgstr "Première version"

@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Waarp SAS
+# This file is distributed under the same license as the Waarp Analyze
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Waarp Analyze 0.0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-13 17:29+0200\n"
+"PO-Revision-Date: 2016-06-13 18:01+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: ../../source/use.rst:2
+msgid "Usage"
+msgstr "Utilisation"
+
+#: ../../source/use.rst:5
+msgid "Execution"
+msgstr "Exécution"
+
+#: ../../source/use.rst:9
+msgid ":program:`waarp-analyze` accepts the following options"
+msgstr ":program:`waarp-analyze` accepte les arguments suivants :"
+
+#: ../../source/use.rst:13
+msgid ""
+"Verbose output. All information about the collect of data and the "
+"generation of the report is written on the standard error."
+msgstr ""
+"Sortie verbeuse. Toutes les informations sur la collecte de données et la "
+"génération des rapports sont écrites sur la sortie d'erreur."
+
+#: ../../source/use.rst:18
+msgid "Prints version and exits"
+msgstr "Écrit la version et termine."
+
+#: ../../source/use.rst:22
+msgid ""
+"Write report to this location. Use '-' for standard output (default is "
+"standard output)"
+msgstr ""
+"Écrit le rapport à cet emplacement. Utilisez '-' pour la sortie standard "
+"(par défaut, la sortie standard est utilisée)"
+
+#: ../../source/use.rst:27
+msgid "Limit analyze to this Waarp instance"
+msgstr "Limiter l'analyse à cette instance"
+
+#: ../../source/use.rst:31
+msgid "Show the help message"
+msgstr "Écrit un message d'aide"
+
+#: ../../source/use.rst:35
+msgid ""
+"Depending on which system user runs :program:`waarp-analyze`, it might not "
+"have the rights to collect all information. It might not have the required "
+"UNIX permissions."
+msgstr ""
+"Selon l'utilisateur système qui lance :program:`waarp-analyze`, celui-ci "
+"peut ne pas avoir les droits nécessaires pour collecter toutes les "
+"informations"
+
+#: ../../source/use.rst:39
+msgid ""
+"To work around that limitation, make sure you run :program:`waarp-analyze` "
+"with the same user that runs Waarp instances."
+msgstr ""
+"Pour contourner cette limitation, assurez-vous de lancer :program:`waarp-"
+"analyze` avec le même utilisateur système que celui qui lance les instances "
+"Waarp."
+
+#: ../../source/use.rst:45
+msgid "One-Time Run"
+msgstr "Usage unique"
+
+#: ../../source/use.rst:47
+msgid ""
+"Waarp Analyze can be run when needed to get a full picture of the of an "
+"instance configuration along with its system environment."
+msgstr ""
+"Waarp Analyze peut être lancé en cas de besoin pour obtenir un panorama "
+"global de la configuration d'une instance et de son environnement système."
+
+#: ../../source/use.rst:50
+msgid ""
+"It is useful to debug the configuration or to have all the elements "
+"necessary to fine-tune it."
+msgstr ""
+"Ça peut être utile pour débugger la configuration d'une instance ou pour "
+"avoir toutes les informations nécessaires pour l'affiner."
+
+#: ../../source/use.rst:54
+msgid "Generate HTML reports"
+msgstr "Générer des rapport HTML"
+
+#: ../../source/use.rst:56
+msgid "Waarp Analyze generates its report in the `ReStructured Text`_ format."
+msgstr "Waarp Analyze génère ses rapports au format `ReStructured Text`_."
+
+#: ../../source/use.rst:58
+msgid ""
+"This report can be used as is, or converted to HTML, or any format "
+"supported by the various converter that exist (docutils_, pandoc_, etc.)."
+msgstr ""
+"Les rapports peuvent être utilisés tels quels, ou convertis au format HTML, "
+"ou dans tous les formats supportés par les convertisseurs existants "
+"(docutils_, pandoc_, etc.)."
+
+#: ../../source/use.rst:62
+msgid "To generate a HTML report, you can run the following command:"
+msgstr "Pour générer un rapport HTML, utilisez les commande suivantes :"
+
+#: ../../source/use.rst:69
+msgid "or use the one-liner :"
+msgstr "ou en une ligne :"
+
+#: ../../source/use.rst:82
+msgid "Run as error task in Waarp R66"
+msgstr "Lancer en traitement d'erreur dans Waarp R66"
+
+#: ../../source/use.rst:84
+msgid ""
+"It can be useful to run Waarp Analyze as a error task in Waarp R66 to ease "
+"the debug of failed transfers by capturing the system environment when the "
+"error occured."
+msgstr ""
+"Il peut être utile d'exécuter  Waarp Analyze en traitement d'erreur pour "
+"faciliter l'analyse des transferts en erreur en capturant l'environnement "
+"au moment où l'erreur est survenue."
+
+#: ../../source/use.rst:88
+msgid ""
+"To do so, add the following XML to your transfer rules in a `<rerrortasks>` "
+"and/or `<serrortasks>` (whether you want to run it on the receiver and/or "
+"the sender of the file):"
+msgstr ""
+"Pour cela, ajoutez le bloc XML suivant à vos règles de transfert dans les "
+"blocs `<rerrortasks>` et/ou `<serrortasks>` (selon que vous voulez "
+"l'exécuter sur l'émetteur et/ou le récepteur du fichier) :"
