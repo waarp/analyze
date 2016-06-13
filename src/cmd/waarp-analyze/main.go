@@ -11,7 +11,7 @@ import (
 	flags "github.com/jessevdk/go-flags"
 )
 
-const VERSION_NUM = "0.0.1"
+const VERSION_NUM = "0.0.2"
 
 type cmdArgs struct {
 	// ConfRoot string `short:"c" long:"conf-root" description:"Root to Waarp instances configuration"`
