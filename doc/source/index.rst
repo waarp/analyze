@@ -1,10 +1,8 @@
-.. Waarp Analyze documentation master file, created by
-   sphinx-quickstart on Mon Jun 13 14:20:30 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Waarp Analyze's documentation
+=============================
 
-Welcome to Waarp Analyze's documentation!
-=========================================
+:Version: |version|
+:Date: |today|
 
 Waarp Analyze is a tool that gathers information about Waarp instances
 and about the server it runs on.
@@ -25,7 +23,20 @@ format supported by docutils_ (or pandoc_, or any RST converter).
    For now, Waarp Analyze *only* runs on GNU/Linux 32 and 64 bits.
    It *only* detects **running instances of Waarp R66 Server**.
 
-Contents:
+Links
+-----
+
+* `Source code <https://alm.waarp.fr/projects/waarp-analyze/repository>`__
+* `Download <https://dl.waarp.org/dist/waarp-analyze/>`__
+* `Documentation <https://doc.waarp.org/waarp-analyze/latest/en>`__
+
+License
+-------
+
+Waarp Analyze is provided under the terms of the MIT license.
+
+Contents
+--------
 
 .. toctree::
    :maxdepth: 2
@@ -35,13 +46,3 @@ Contents:
    sample
    roadmap
    changelog
-
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
-
