@@ -26,7 +26,7 @@ format supported by docutils_ (or pandoc_, or any RST converter).
 Links
 -----
 
-* `Source code <https://alm.waarp.fr/projects/waarp-analyze/repository>`__
+* `Source code <https://github.com/waarp/analyze>`__
 * `Download <https://dl.waarp.org/dist/waarp-analyze/>`__
 * `Documentation <https://doc.waarp.org/waarp-analyze/latest/en>`__
 
